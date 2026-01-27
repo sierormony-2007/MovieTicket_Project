@@ -11,11 +11,23 @@ public class Seat {
     int seatNumber;
     String seatType;
     boolean isAvailable;
+    double price;
 
-    public Seat( int seatNumber, String seatType, boolean isAvailable){
+    public Seat( int seatNumber, String seatType, boolean isAvailable, double price){
         this.seatNumber = seatNumber;
         this.seatType = seatType;
         this.isAvailable = isAvailable;
+        this.price = price;
+
+
+    }
+
+    public void priceSeat(){
+        if(seatType.equals("VIP")){
+            price += 20.0;
+        } else if (seatType.equals("Regular")){
+            price += 10.0;
+        }
     }
 
 }

@@ -7,6 +7,15 @@
  *
  * @author USER
  */
-public class Customer {
+public class Showtime {
+    String time;
+    String date;
+    int hallNumber;
+
+    public Showtime(String time, String date){
+        this.time = time;
+        this.date = date;
+    }
+
 
 }
